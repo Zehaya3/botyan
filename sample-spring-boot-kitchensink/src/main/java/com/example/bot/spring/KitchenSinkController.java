@@ -309,7 +309,7 @@ public class KitchenSinkController {
             }
             //////////////////////////////////
             case "だまれ糞野郎": {
-                this.replyText(replyToken, "うるせぇカス野郎死ね");
+                this.replyText(replyToken, "なんだって？");
                 break;
             }
             //////////////////////////////////
