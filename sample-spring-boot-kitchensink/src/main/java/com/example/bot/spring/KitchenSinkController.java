@@ -307,10 +307,12 @@ public class KitchenSinkController {
                 this.reply(replyToken, templateMessage);
                 break;
             }
+            //////////////////////////////////
             case "だまれ糞野郎": {
                 this.replyText(replyToken, "うるせぇカス野郎死ね");
                 break;
             }
+            //////////////////////////////////
             case "carousel": {
                 String imageUrl = createUri("/static/buttons/1040.jpg");
                 CarouselTemplate carouselTemplate = new CarouselTemplate(
