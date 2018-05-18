@@ -279,7 +279,7 @@ public class KitchenSinkController {
             case "confirm": {
                 ConfirmTemplate confirmTemplate = new ConfirmTemplate(
                         "今日空いてる",
-                        new MessageAction("空いてる", "ええやつやなお前"),
+                        new MessageAction("空いてる", "空いてるよー"),
                         new MessageAction("予定がある", "だまれ糞野郎")
                 );
                 TemplateMessage templateMessage = new TemplateMessage("Confirm alt text", confirmTemplate);
@@ -305,6 +305,10 @@ public class KitchenSinkController {
                         ));
                 TemplateMessage templateMessage = new TemplateMessage("Button alt text", buttonsTemplate);
                 this.reply(replyToken, templateMessage);
+                break;
+            }
+            case "だまれ糞野郎": {
+                this.replyText(replyToken, "うるせぇカス野郎死ね");
                 break;
             }
             case "carousel": {
