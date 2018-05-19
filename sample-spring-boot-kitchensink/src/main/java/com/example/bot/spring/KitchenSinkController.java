@@ -283,6 +283,8 @@ public class KitchenSinkController {
                         new MessageAction("予定がある", "だまれ糞野郎")
                 );
                 TemplateMessage templateMessage = new TemplateMessage("Confirm alt text", confirmTemplate);
+                log.info("¥/////////CONFIRMに対して返信する場所を通過しました。////////////¥n");
+                break;
                 this.reply(replyToken, templateMessage);
                 break;
             }
@@ -310,7 +312,7 @@ public class KitchenSinkController {
             //////////////////////////////////
             case "だまれ糞野郎": {
                 this.replyText(replyToken, "なんだって？");
-                System.out.println("BRHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+                log.info("¥/////////だまれ糞野郎の返信を通過しました。////////////¥n");
                 break;
             }
             //////////////////////////////////
